@@ -1,40 +1,5 @@
 
 
-import streamlit as st
-
-st.set_page_config(
-    page_title="AI Quiz Generator",
-    page_icon="🧠",
-    layout="centered"
-)
-
-st.title("🧠 AI Quiz Generator")
-st.write("Generate quizzes for your studies using Gemini AI!")
-
-topic = st.text_input(
-    "Enter your quiz topic",
-    placeholder="e.g. Python, Science, Artificial Intelligence"
-)
-
-difficulty = st.selectbox(
-    "Choose difficulty",
-    ["Easy", "Medium", "Hard"]
-)
-
-num_questions = st.selectbox(
-    "Number of questions",
-    [5, 10, 15]
-)
-
-if st.button("Generate Quiz"):
-    if not topic.strip():
-        st.warning("Please enter a topic first.")
-    else:
-        st.info("Your app is working! Gemini integration is the next step.")
-        st.write("Topic:", topic)
-        st.write("Difficulty:", difficulty)
-        st.write("Questions:", num_questions)
-
 
 
 
